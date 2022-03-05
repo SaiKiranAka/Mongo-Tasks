@@ -1,0 +1,15 @@
+use myfirstdb
+
+db.createCollection("mycollection")
+
+db.mycollection.insertMany([
+{"Name":"User 1","Phone No.":123456789,"Place":"Hyderabad"},
+{"Name":"User 2","Phone No.":987654321,"Place":"Banglore"},
+{"Name":"User 3","Phone No.":234567891,"Place":"Chennai"}]);
+
+db.mycollection.find().pretty()
+
+db.mycollection.update({"Name":"User 2"},{$set:{Place:"Thiruvananthapuram"}})
+
+db.mycollection.remove({Name:"User 3"})
+db.mycollection.find().pretty()
