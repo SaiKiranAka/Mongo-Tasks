@@ -1,0 +1,2 @@
+mongoimport --jsonArray --db mongotest --collection mongotestcollection --file C:\Users\SAI KIRAN\Desktop\Tableau Data\students.json
+
